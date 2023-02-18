@@ -20,6 +20,7 @@ const displayUser = users => {
             <h4>Name: ${user.name.title} ${user.name.first} ${user.name.last}</h4> 
             <p>Email: ${user.email}</p>
             <p>Phone: ${user.phone}</p>
+            <p>Country: ${user.location.country}</p>
             <p>Age: ${user.dob.age}</p>
             <p>Gender: ${user.gender}</p>
          `
