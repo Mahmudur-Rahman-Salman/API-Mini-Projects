@@ -14,6 +14,11 @@
             color: white;
             text-align: center; 
         }
+        #country-container{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 20px;
+        }
     </style>
 </head>
 <body>
@@ -27,7 +32,7 @@
             </div>
         </section>
         <br>
-        <button>Generate Country</button>
+        <button onclick="loadCountries()">Generate Country</button>
     </main>
 
     <script src="/Random Countries/js/script.js"></script>

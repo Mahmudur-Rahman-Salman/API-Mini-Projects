@@ -26,4 +26,4 @@ const displayCountries = countries => {
         countryContainer.appendChild(countryDiv); 
     })
 }
-loadCountries(); 
+// loadCountries(); 
