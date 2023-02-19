@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MealDB</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="/MealDB/CSS/style.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="text-center text-primary">Meals that you like</h1>
+    </header>
+    <br><br>
+    <main>
+        <section class="container">
+            <div class="mb-3 text-center">
+                <input id="search-field" type="text" class="form-control" placeholder="search your meal">
+                <br>
+                <button onclick="searchFood()" class="btn btn-primary w-50">Search</button>
+            </div>
+        </section>
+        <section class="container">
+            <div id="meal-container" class="row row-cols-1 row-cols-md-3 g-4">
+
+            </div>
+        </section>
+
+    </main>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+    <script src="/MealDB/js/script.js"></script>
+</body>
+
+</html>
