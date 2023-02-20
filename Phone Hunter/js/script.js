@@ -36,4 +36,4 @@ document.getElementById("btn-search").addEventListener("click", function () {
     searchField.value = ""; 
 })
 
-loadPhone(" ");
+loadPhone("phone");
