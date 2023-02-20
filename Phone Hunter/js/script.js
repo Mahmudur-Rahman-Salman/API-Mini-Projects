@@ -19,9 +19,9 @@ const displayPhone = (phones) => {
         notfound.classList.add("d-none"); 
     }
     phones.forEach(phone => {
-        const phoneDiv = document.createElement("div"); 
-        console.log(phone); 
-        phoneDiv.classList.add("col"); 
+        const phoneDiv = document.createElement("div");
+        console.log(phone);
+        phoneDiv.classList.add("col");
         phoneDiv.innerHTML = ` 
         <div class="card p-2">
             <img src="${phone.image}" class="card-img-top w-50 m-auto" alt="...">
@@ -31,17 +31,29 @@ const displayPhone = (phones) => {
                 <p class="card-text">${phone.slug}</p>
             </div>
         </div>
-        `; 
-        phoneContainer.appendChild(phoneDiv); 
-    })
+        `;
+        phoneContainer.appendChild(phoneDiv);
+    }); 
+    toggleSpinner(false); 
 }
 
 
 document.getElementById("btn-search").addEventListener("click", function () {
+    toggleSpinner(true); 
     const searchField = document.getElementById("search-field"); 
     const searchText = searchField.value; 
     loadPhone(searchText)
     searchField.value = ""; 
 })
+
+const toggleSpinner = isloading => {
+    const loaderSpinner = document.getElementById("spinner-loader"); 
+    if (isloading) {
+        loaderSpinner.classList.remove("d-none"); 
+    }
+    else {
+        loaderSpinner.classList.add("d-none")
+    }
+}
 
 // loadPhone("phone");
